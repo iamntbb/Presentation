@@ -1,4 +1,6 @@
-//Part 2
+double den(int a);
+
+
 double den(int a)
 {
   int i=1;
