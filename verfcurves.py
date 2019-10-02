@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.patches import Polygon
 
 def first_curve():
 	x=list(range(-2,3))
