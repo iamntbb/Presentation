@@ -2,23 +2,23 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def first_curve():
-	x=list(range(-2,3))
-	y=[i**(4/3) for i in x]
+	x=np.linspace(-2,3,100)
+	y=x**(4/3)
 	plt.plot(x,y,label='Numerator', linestyle='-')
 
 def second_curve1():
-	x=list(range(-3,3))
-	y=[(8+i)**(-2) for i in x]
+	x=np.linspace(-3,3,100)
+	y=(8+x)**(-2) 
 	plt.plot(x,y,label='Denominator1(8)', linestyle='-')
    
 def second_curve2():
-	x=list(range(-3,3))
-	y=[(-9+i)**(-2) for i in x]
+	x=np.linspace(-3,3,100)
+	y=(-9+x)**(-2)
 	plt.plot(x,y,label='Denominator2(-9)', linestyle='-')
 	
 def x():
-	x=list(range(-7,7))
-	y=[0 for i in x]
+	x=np.linspace(-10,10,100)
+	y = np.zeros(100)
 	plt.plot(x,y,label='X Axis', linestyle='-')
 	
 first_curve() 
