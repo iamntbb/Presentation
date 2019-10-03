@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def first_curve():
 	x=list(range(-2,3))
-	y=[(3/4)*i**(4/3) for i in x]
+	y=[i**(4/3) for i in x]
 	plt.plot(x,y,label='Numerator', linestyle='-')
 
 def second_curve1():
